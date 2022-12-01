@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[agenciasGestor] (
     [idAgenciaGestor] INT IDENTITY (1, 1) NOT NULL,
-    [idGestor]        INT ,
+    [idGestor]        INT NULL,
     [idAgencia]       INT NULL,
     [estado]          INT NULL,
     CONSTRAINT [PK_agenciasGestor] PRIMARY KEY CLUSTERED ([idAgenciaGestor] ASC),
