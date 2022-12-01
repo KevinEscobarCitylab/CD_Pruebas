@@ -2,7 +2,7 @@
     [idAgenciaGestor] INT IDENTITY (1, 1) NOT NULL,
     [idGestor]        INT NULL,
     [idAgencia]       INT NULL,
-    [estado]          INT NULL,
+    [estado]          INT NOT NULL,
     CONSTRAINT [PK_agenciasGestor] PRIMARY KEY CLUSTERED ([idAgenciaGestor] ASC),
     CONSTRAINT [FK_agenciasGestor_idAgencia] FOREIGN KEY ([idAgencia]) REFERENCES [dbo].[agencias] ([idAgencia]),
     CONSTRAINT [FK_agenciasGestor_idGestor] FOREIGN KEY ([idGestor]) REFERENCES [dbo].[gestores] ([idGestor])

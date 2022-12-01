@@ -8,7 +8,7 @@ este script es para actulizar los catalogos por default sin modificar nada impor
  --Version			
 --------------------------------------------------------------------------------------
 go
-	declare @version varchar(20) = '1.0.25.0'
+	declare @version varchar(20) = '1.0.26.0'
 
 	
 	declare @data nvarchar(max) = (select conf from parametros)
