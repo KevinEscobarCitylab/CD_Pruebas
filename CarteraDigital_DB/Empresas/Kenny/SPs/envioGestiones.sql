@@ -1,0 +1,1 @@
+﻿create   procedure envioGestiones(@text varchar(max)) as begin declare @id int select @id = 1; end
